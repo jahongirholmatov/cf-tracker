@@ -32,7 +32,6 @@ if __name__ == "__main__":
   print(f"Bugun yechilgan to'g'ri masalalar soni: {solved}")
 
   if solved > 0:
-    # Bugun masala yechilgan bo'lsa, faylga yozamiz
     today_str = str(datetime.date.today())
     with open(LOG_FILE, "a", encoding="utf-8") as f:
       f.write(
